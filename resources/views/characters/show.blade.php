@@ -13,5 +13,7 @@
             <strong>Vita:</strong> {{ $character->life }} <br />
         </div>
     </section>
-
+    <div class="container">
+        <a href="{{ route('characters.edit', $character) }}" class="btn btn-warning">Modifica</a>
+    </div>
 @endsection

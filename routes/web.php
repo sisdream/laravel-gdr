@@ -1,10 +1,8 @@
 <?php
 
-use App\Http\Controllers\ItemController;
-
 use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
-
 
 /*
 |--------------------------------------------------------------------------

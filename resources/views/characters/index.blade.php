@@ -12,9 +12,10 @@
                         <th scope="col">name</th>
                         <th scope="col">attack</th>
                         <th scope="col">defence </th>
-                        <th scope="col">life </th>
-                        <th scope="row">{{ $character->id }}</th>
+                        <th scope="col">life</th>
+                        <th scope="col"></th>
                     </tr>
+                </thead>
 
                 <tbody>
                     @foreach ($characters as $character)
@@ -23,7 +24,9 @@
                             <td scope="col">{{ $character->attack }}</td>
                             <td scope="col">{{ $character->defence }}</td>
                             <td scope="col">{{ $character->life }}</td>
-                            <a href="{{ route('characters.show', $character) }}"> Dettaglio </a>
+                            <td scope="col">
+                                <a href="{{ route('characters.show', $character) }}"> Dettaglio </a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
