@@ -20,11 +20,10 @@ class CharacterController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('characters.create');
     }
 
     /**
@@ -42,11 +41,10 @@ class CharacterController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Character  $character
-     * @return \Illuminate\Http\Response
      */
     public function show(Character $character)
     {
-        //
+        return view('characters.show', compact('character'));
     }
 
     /**
