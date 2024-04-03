@@ -2,7 +2,7 @@
 
 @section('title', 'Crea personaggio')
 
-@section('main-content')
+@section('content')
     <section>
         <div class="container py-4">
             <h1 class="text-center">Crea nuovo personaggio</h1>
