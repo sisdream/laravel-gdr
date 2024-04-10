@@ -17,4 +17,8 @@ class Character extends Model
         'speed',
         'life'
     ];
+
+    public function types(){
+        return $this->belongsTo(Type::class);
+    }
 }
