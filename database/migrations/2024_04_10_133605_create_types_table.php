@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('types', function (Blueprint $table) {
             $table->id();
-            $table->varchar('name',150);
-            $table->varchar('slug',255);
-            $table->varchar('image',255);
+            $table->string('name',150);
+            $table->string('slug',255);
+            $table->string('image',255);
             $table->text('description');
             $table->timestamps();
         });
