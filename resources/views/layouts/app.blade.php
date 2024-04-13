@@ -17,6 +17,8 @@
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
+
+    @yield('css')
 </head>
 
 <body>
@@ -52,19 +54,19 @@
                         </li>
 
 
-                    @auth
+                        @auth
 
-                       
-                        <li>
-                            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
-                                href="{{ route('characters.index') }}">Characters</a>
-                        </li>
 
-                        <li>
-                            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
-                                href="{{ route('types.index') }}">Types</a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
+                                    href="{{ route('characters.index') }}">Characters</a>
+                            </li>
+
+                            <li>
+                                <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
+                                    href="{{ route('types.index') }}">Types</a>
+                            </li>
+                        </ul>
 
                     @endauth
 
@@ -111,6 +113,8 @@
 
         <main class="">
             @yield('content')
+
+            @yield('modal')
         </main>
     </div>
 </body>

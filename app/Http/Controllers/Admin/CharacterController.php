@@ -84,6 +84,7 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        $character->delete();
+        return redirect()->route('characters.index');
     }
 }
