@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CharacterController;
 use App\Http\Controllers\Admin\ItemController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,9 @@ Route::middleware('auth')->group(function () {
 
     // rotta 
     Route::resource('characters', CharacterController::class);
+
+    Route::resource('types', TypeController::class);
+
 
     //Luigi
     //Route::name('admin.')->prefix('admin')->group(function () {

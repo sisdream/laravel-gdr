@@ -57,7 +57,12 @@
                        
                         <li>
                             <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
-                                href="{{ route('characters.index') }}">Character</a>
+                                href="{{ route('characters.index') }}">Characters</a>
+                        </li>
+
+                        <li>
+                            <a @class(['nav-link', 'active' => Route::currentRouteName() == 'index']) aria-current="page"
+                                href="{{ route('types.index') }}">Types</a>
                         </li>
                     </ul>
 
