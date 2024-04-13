@@ -5,7 +5,8 @@
 @section('content')
     <section>
         <div class="container py-4">
-            <a href="{{ route('types.create') }}" role="button" class="btn btn-primary">Crea classe personaggio</a>
+            <a href="{{ route('types.create') }}" role="button" class="btn btn-primary"><i
+                    class="fa-solid fa-plus fa-beat"></i> Crea classe personaggio</a>
 
             <table class="table">
                 <thead>
@@ -28,10 +29,12 @@
 
                             <td scope="col">{{ $type->get_description(450) }}</td>
                             <td scope="col">
-                                <a href="{{ route('types.show', $type) }}"> Dettaglio</a>
+                                <a class="btn btn-primary" href="{{ route('types.show', $type) }}"> <i
+                                        class="fa-solid fa-eye "></i></a>
                             </td>
                             <td scope="col">
-                                <a href="{{ route('types.edit', $type) }}"> Modifica</a>
+                                <a class="btn btn-warning" href="{{ route('types.edit', $type) }}"> <i
+                                        class="fa-solid fa-pen "></i></a>
                             </td>
                             <td scope="col">
                                 <a class="btn btn-danger" data-bs-toggle="modal"

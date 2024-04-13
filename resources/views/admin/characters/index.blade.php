@@ -13,7 +13,8 @@
                         <th scope="col">attack</th>
                         <th scope="col">defence </th>
                         <th scope="col">life</th>
-                        <th scope="col"></th>
+                        <th style="width: 200px"></th>
+
                     </tr>
                 </thead>
 
@@ -25,10 +26,15 @@
                             <td scope="col">{{ $character->defence }}</td>
                             <td scope="col">{{ $character->life }}</td>
                             <td scope="col">
-                                <a href="{{ route('characters.show', $character) }}"> Dettaglio </a>
-                            </td>
-                            <td scope="col">
-                                <a class="btn btn-danger" data-bs-toggle="modal"
+                                <a class="btn btn-primary mx-2" href="{{ route('characters.show', $character) }}"> <i
+                                        class="fa-solid fa-eye "></i> </a>
+
+
+                                <a class="btn btn-warning mx-2 ms-2" href="{{ route('characters.edit', $character) }}"> <i
+                                        class="fa-solid fa-pen "></i></a>
+
+
+                                <a class="btn btn-danger mx-2 ms-2" data-bs-toggle="modal"
                                     data-bs-target="#delete-character-{{ $character->id }}-modal"><i
                                         class="fa-solid fa-trash "></i>
                                 </a>
