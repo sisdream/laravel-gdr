@@ -12,7 +12,7 @@
 
                 <div class=" card-body d-flex my-3 gap-5">
                     <div class="card-img">
-                        <img src="{{$type->image}}" alt="img-type">
+                        <img src="{{$type->image}}" class="w-50" alt="img-type">
                     </div>
                     <p class="d-flex align-items-center">{{$type->description}}</p>
                 </div>
