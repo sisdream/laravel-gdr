@@ -22,7 +22,7 @@
                     @foreach ($characters as $character)
                         <tr>
                             <td scope="col">{{ $character->name }}</td>
-                            <td scope="col">{{ $character->attack }}</td>
+                            <td scope="col">{{ $character->strength }}</td>
                             <td scope="col">{{ $character->defence }}</td>
                             <td scope="col">{{ $character->life }}</td>
                             <td scope="col">
